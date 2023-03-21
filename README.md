@@ -1,5 +1,6 @@
 # Phase 3 Mock Code Challenge: Freebie Tracker
 
+Dev -------< Freebie >------- Company
 
 ## Introduction
 
