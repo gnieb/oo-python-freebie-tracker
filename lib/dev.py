@@ -2,8 +2,11 @@ from .freebie import Freebie
 
 class Dev:
     
+    all = []
+
     def __init__(self, name):
         self.name = name
+        Dev.all.append(self)
 
     @property
     def freebies(self):
