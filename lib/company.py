@@ -14,3 +14,8 @@ class Company:
     def devs(self):
         return [f.dev for f in self.freebies]
     
+
+    def give_freebie(self, dev, item_name, value):
+        Freebie(self, dev, item_name, value)
+
+    
