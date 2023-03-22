@@ -2,12 +2,8 @@ from .freebie import Freebie
 
 class Dev:
     
-    all = []
-
     def __init__(self, name):
         self.name = name
-        Dev.all.append( self )
-
 
     @property
     def freebies(self):
@@ -15,16 +11,5 @@ class Dev:
     
     @property
     def companies(self):
-        return [f.company for f in Freebie.all if f.dev == self]
-
+        return [f.company for f in self.freebies]
     
-    def received_one(self, item_name):
-        for f in self.freebies:
-            if f.item == item_name:
-                return True
-            else: 
-                return False
-
-    def give_away(self, dev, freebie):
-        if freebie.dev == self:
-            freebie.dev = dev
