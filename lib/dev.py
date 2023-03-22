@@ -19,4 +19,9 @@ class Dev:
                 return True
             else:
                 return False
-            
+    
+    def give_away(self, dev, freebie):
+        if freebie.dev == self:
+            freebie.dev = dev
+        else:
+            print("THAT DOESN'T BELONG TO YOU")
