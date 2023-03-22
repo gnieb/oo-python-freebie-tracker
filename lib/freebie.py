@@ -10,3 +10,7 @@ class Freebie:
         self.value = value
         Freebie.all.append(self)
 
+    @property
+    def print_details(self):
+        return f"{self.dev.name} owns a {self.item_name} from {self.company.name}."
+    
